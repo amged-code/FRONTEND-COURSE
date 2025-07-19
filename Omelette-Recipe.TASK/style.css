@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(234, 216, 192);
+    display: flex;
+    margin: 0;
+    justify-content: center;
+}
+.page{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 360px;
+    border-radius: 12px;
+
+}
+.photo{
+    border-radius: 18px;
+    padding:8px;
+    width: 340px;
+    height: 160px;
+    margin-bottom: 5px;
+}
+h1{
+     font-family: "Times New Roman", Times, serif;
+}
+p{
+    color: rgb(88, 88, 61);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:xx-small;
+}
+.box1{
+    background-color: rgb(242, 218, 243);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+.text{
+    color: darkmagenta;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    margin : 0 0 10px 0;
+}
+.info{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 6px;
+    font-size: x-small;
+}
+.text2{
+    color: rgb(100, 75, 37);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: "Times New Roman", Times, serif;
+    
+}
+.ingreds{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(129, 91, 43);
+    font-size: small;
+    margin-bottom: 8px;
+    height: 20px;
+}
+.insts{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(129, 91, 43);
+    font-size: xx-small;
+    height: 40px;
+    margin-bottom: 8px;
+}
+hr{
+    font-size: xx-small;
+    color: bisque;
+}
+strong{
+    font-size: 12px;
+}
+.text3{
+    color: rgb(100, 75, 37);
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: "Times New Roman", Times, serif;
+}
+.diet{
+    border-bottom: 1px solid rgb(192, 186, 107);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.numbers{
+    font-size: small;
+    font-weight:bolder;
+    color: rgb(68, 48, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 110px;
+}
+.ingredients{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: rgb(170, 145, 114);
+}

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard</title>
+    <style>
+         p{
+            color: #64748b;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+         h2{
+            color: #1e293b;
+            font-size: 30px;
+            margin: 5px 0;
+            font-family: Arial, Helvetica, sans-serif;
+         }   
+         h3,strong{
+            color: #1e293b;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         small{
+            color: #64748b;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         hr{
+            color: #1e293b;
+            font-size: 1px;
+         }
+         span{
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         h1{
+            font-family: Arial, Helvetica, sans-serif;
+         }
+    </style>
+</head>
+<body>
+   <div class="dashboard-container">
+     <aside class="side-bar">
+        <div class="sidebar-header">
+            <div class="logo">
+                <i class="fa-brands fa-slack"></i>
+                <span class="logo-text">Dashpro</span>
+            </div>
+        </div>
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item active">
+                   <a href="#" class="link"> 
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                   </a> 
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="link">   
+                    <i class="fa-solid fa-chart-pie"></i>
+                    <span>Analytics</span>
+                  </a> 
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="link">  
+                    <i class="fa-solid fa-user"></i>
+                    <span>User</span>
+                   </a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="link">  
+                    <i class="fa-solid fa-diagram-project"></i>
+                    <span>Project</span>
+                   </a> 
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="link">  
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Settings</span>
+                   </a> 
+                </li>
+            </ul>
+        </nav>
+     </aside>
+     <main class="main-contact">
+       <header class="header">
+           <div class="header-left">
+            <h1 class="page-title">Dashboard</h1>
+            <p class="page-subtitle">Welcome back! Here's what's happening today.</p>
+           </div>
+
+           <div class="header-right">
+             <div class="search-box">
+               <input type="text" placeholder="Search.." class="search-input">
+               <i class=" search-icon fa-solid fa-magnifying-glass"></i>
+             </div> 
+
+             <div class="header-action">
+               <button class="notif-bell">
+                  <i class="fa-solid fa-bell bell-icon"></i>
+                  <span class="notif-number">3</span>
+               </button>
+            
+             <div class="user-profile">
+             <img src="user.jpg"
+                 alt="user"
+                 class="photo">
+
+               <div class="user-info">
+                 <span class="username">john Doe</span>
+                 <br>
+                 <span class="Role">Administrator</span>
+               </div>
+              </div>
+             </div>           
+            </div>
+        </header> 
+        <body class="body">
+          <div class="cards">
+                <div class="everycard">
+                <div class="card-icon1"><i class="fa-solid fa-dollar-sign"></i></div>
+                 <div class="card-info">
+                  <h2>$45,231</h2>
+                  <br>
+                  <p>Total Revenue</p>
+                  <br>
+                  <span class="up">+12.5%</span>
+                 </div>
+                </div>
+
+                <div class="everycard">
+                <div class="card-icon2"><i class="fa-solid fa-user"></i></div>
+                 <div class="card-info">
+                  <h2>2,431</h2>
+                  <br>
+                  <p>Active users</p>
+                  <br>
+                  <span class="up">+8.2%</span>
+                 </div>
+                </div>
+
+                <div class="everycard">
+                <div class="card-icon3"><i class="fa-solid fa-truck"></i></div>
+                 <div class="card-info">
+                  <h2>1,247</h2>
+                  <br>
+                  <p>Total Orders</p>
+                  <br>
+                  <span class="down">-3.1%</span>
+                 </div>
+                </div>
+
+                <div class="everycard">
+                <div class="card-icon4"><i class="fa-solid fa-percent"></i></div>
+                 <div class="card-info">
+                  <h2>78.4%</h2>
+                  <br>
+                  <p>Conversion Rate</p>
+                  <br>
+                  <span class="up">+5.7%</span>
+                 </div>
+                </div>
+            </div>
+          </div>
+        </body>
+      <div class="section">
+       <div class="activity-section">
+    <div class="section-header">
+      <h3>Recent Activity</h3>
+      <a href="#" class="view-all">View All</a>
+    </div>
+    <hr>
+    <div class="activity-item">
+      <img src="user.jpg" alt="User" class="photo">
+      <div>
+        <strong>Sarah Johnson</strong> completed project review
+        <br>
+        <small>2 minutes ago</small>
+      </div>
+    </div>
+    <hr>
+    <div class="activity-item">
+      <img src="user.jpg" alt="User" class="photo">
+      <div>
+        <strong>Mike Chen</strong> uploaded new documents
+        <br>
+        <small>15 minutes ago</small>
+      </div>
+    </div>
+    <hr>
+    <div class="activity-item">
+      <img src="user.jpg" alt="User" class="photo">
+      <div>
+        <strong>Emma Wilson</strong> created new task
+        <br>
+        <small>1 hour ago</small>
+      </div>
+    </div>
+    <hr>
+    <div class="activity-item">
+      <img src="user.jpg" alt="User" class="photo">
+      <div>
+        <strong>John Doe</strong> approved budget request
+        <br>
+        <small>2 hours ago</small>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="progress-section">
+    <div class="section-header">
+      <h3>Project Progress</h3>
+      <a href="#" class="Manage">Manage</a>
+    </div>  
+   <hr>   
+   <div class="progress-item">
+      <div>
+          <strong>Website Redesign</strong> 
+          <br>
+          <small>Due: Dec 15,2024</small>
+      </div>
+   </div>
+   <hr>
+   <div class="progress-item">
+      <div>
+          <strong>Mobile App Development</strong> 
+          <br>
+          <small>Due: Jan 20,2025</small>
+      </div>
+   </div>
+   <hr>
+   <div class="progress-item">
+      <div>
+          <strong>Database Migration</strong> 
+          <br>
+          <small>Due: Dec 30,2024</small>
+      </div>
+   </div>
+   <hr>
+     </main>
+   </div>
+  </div> 
+ </div> 
+</body>
+</html>
