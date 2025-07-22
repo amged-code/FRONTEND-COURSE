@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-primary: #ed1c24;
+  --color-primary-dark: #c00;
+  --color-gray-light: #ccc;
+  --color-gray: #666;
+  --color-gray-dark: #333;
+  --color-overlay: rgba(0, 0, 0, 0.8);
+  --color-shadow-light: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section1{
+    background-image: url("banner-bg.jpg");
+    background-size: cover;
+}
+.Header{
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    color: var(--color-white);
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.Links-bar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+}
+.links ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.links button{
+    background: none;
+    border: none;
+}
+.link:hover{
+    background-color: var(--color-primary);
+    width: 100px;
+    height: 50px;
+    border-radius: 6px;
+    transition: 0.3s ease-in;
+}
+.link a{
+    color: var(--color-white);
+    font-weight: bold;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icons  i{
+    font-weight: bold;
+    color: var(--color-white);
+}
+.icons i:hover{
+    color: var(--color-primary-dark);
+}
+.hosting{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    gap: 100px;
+}
+.left{
+    width: 300px;
+    align-items: left;
+    justify-content: left;
+    margin-left: 50px;
+}
+.left h1{
+    justify-content: center;
+    text-align: center;
+    font-size: 48px;
+    color: var(--color-white);
+    font-weight: 700;
+}
+.left button{
+    border: none;
+    background-color: #c00;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+    color: var(--color-white);
+    margin-top: 20px;
+    font-size: large;
+}
