@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+@media (max-width: 600px) {
+  .name-email, .pass, .gender .options {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 20px;
+  }
+  .phone .info input{
+    width: 200px;
+}
+
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+ 
+}
+body {
+  font-family: "Inter", sans-serif;
+  height: 1100px;
+  background-color: #8792f7;
+}
+input {
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  border-color: #a99de0;
+  box-shadow: 0 0 8px rgba(47, 10, 214, 0.5); 
+}
+input:hover{
+   border:2px solid #908f99;  
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  background-color: rgb(229, 233, 239);
+  margin-top: 20px;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  height: 1700px;
+}
+.header{
+    text-align: center;
+    margin-top: 20px;
+}
+.header h1{
+    color : #8064c5;
+    font-size: 32px;
+    weight: 500px;
+}
+@media (max-width:600px) {
+    .container{
+        height: 2050px;
+    }
+}
+ @media (min-width:601px) and (max-width:665px) {
+      .container{
+        height: 2000px;
+    }
+}  
+.header p{
+    color: #858d99;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.name-email{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.info{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+}
+input {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.box1{
+    background-color: white;
+    height: 280px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+@media (max-width:600px) {
+    .box1{
+        height: 340px;
+    }
+}
+ @media (min-width:601px) and (max-width:665px) {
+      .box1{
+        height: 360px;
+      }
+    
+ }
+
+.box1 h2{
+    color: #3f3dcf;
+    padding-top: 20px;
+}
+.box1 span{
+    color: red;
+    gap: 4px;
+}
+.phone .info input{
+    width: 700px;
+}
+@media (max-width:600px) {
+ .phone .info input{
+    width: 100%;
+ }
+}
+ @media (min-width:601px) and (max-width:815px) {
+ .phone .info input{
+    width: 100%;
+ }
+}
+.box1, .box2 label{
+    color: #4b4b4f;
+}
+.box2{
+    background-color: white;
+    height: 200px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    justify-content: left;
+    padding-left: 20px;
+}
+@media (max-width:600px) {
+    .box2{
+        height: 250px;
+    }
+}
+ @media (min-width:601px) and (max-width:665px) {
+      .box2{
+        height: 280px;
+    }
+}   
+.box2 h2{
+    color: #3f3dcf;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.box2 span{
+    color: red;
+    margin-left: 4px;
+}
+.pass{
+    display: flex;
+    justify-content: space-between;
+    gap: 10PX;
+    flex-wrap: wrap;
+}
+.box3{
+    background-color: white;
+    height: 450px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    justify-content: left;
+    padding-left: 30px;
+}
+@media (max-width:600px) {
+    .box1{
+        height: 360px;
+    }
+}
+.box3 h2{
+    color: #3f3dcf;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.box3 span{
+    color: red;
+    margin-left: 4px;
+}
+h1{
+    font-weight: 500;
+}
+.options{
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+select {
+    width: 92%;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 0 3px #e0e0ff;
+    margin-left: 10px;
+}
+.gender label{
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 5px 10px 5px 0;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.05s;
+    margin-top: 10px;
+}
+.hobbies label {
+    display: inline-block;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin: 5px 10px 5px 0;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 0.05s;
+    margin-top: 10px;
+} 
+.box3 h3{
+    color: #4b4b4f;
+    font-weight: 600;
+}
+@media (max-width:600px) {
+    .box3{
+        height: 650px;
+    }
+}
+.hobbies label:hover{
+    border:3px solid #574cd4;
+    cursor: pointer;
+    background-color: #eaebf6;
+}
+.gender label:hover{
+    border:3px solid #574cd4;
+    cursor: pointer;
+    background-color: #eaebf6;
+}
+select :hover{
+    border-color: #4b4b4f;
+}
+.box4{
+    background-color: white;
+    height: 450px;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    justify-content: left;
+    padding-left: 30px;
+}
+.box4 h2{
+    color: #3f3dcf;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.box4 span{
+    color: red;
+    margin-left: 4px;
+}
+button{
+    font-size: x-large;
+    font-weight: 700;
+    color: aliceblue;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right,rgb(44, 66, 194),rgb(100, 51, 174));
+    border-radius: 12px;
+    border: none;
+    border-radius: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(145, 135, 180, 0.3);
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(138, 109, 241, 0.5);
+}
+
+.cv input{
+   display: block;
+   margin: 20px 0 8px;
+   font-weight: 500;
+   color: #333;
+   width: 94%;
+   height: 80px;
+   border:2px dashed #c5c5c8;
+}
+.textarea input{
+   display: block;
+   margin: 20px 0 8px;
+   width: 94%;
+   border:2px solid #c5c5c8;
+}
+.data input{
+    width: 94%;
+    padding-left: 10px;
+}
+.box4 label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+.box4 input[type="file"] {
+    border: 2px dashed #ccc;
+    padding-left: 250px;
+    text-align: center;
+    border-radius: 10px;
+    width: 94%;
+    background:#f9fafe;
+}
+.box4 label{
+    color: #4b4b4f;
+    font-weight: 600;
+}
+textarea{
+    color: #858d99;
+    width: 94%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 14px;
+    height: 80px;
+    border-color: #ccc;
+}
+
+

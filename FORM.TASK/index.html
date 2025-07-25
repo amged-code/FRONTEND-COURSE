@@ -3,48 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-
-        <label for="Full name">Full name</label>
-        <input type="text" placeholder="Enter you name" required>
-        <hr>
-        <br>
-        <br>
-        <label for="Email">Email</label>
-        <input type="email" placeholder="Enter your email" required>
-        <hr>
-        <br>
-        <br>
-        <label for="Phone">Phone</label>
-        <input type="tel" placeholder="Enter your phone number" required>
-        <hr>
-        <br>
-        <br>
-        <label for="Password">Password</label>
-        <input type="password" placeholder="Enter your password" required>
-        <hr>
-        <br>
-        <br>
-        <label for="Confirm Password">Confirm Password</label>
-        <input type="password" placeholder="Confirm your password" required>
-        <hr>
-        <br>
-        <br>
-        <h3>Gender</h3>
-
+   <div class="container">
+          <div class="header">
+               <h1>Professional Registration Form</h1>
+               <p>Join our community of professionals and unlock exclusive opportunities</p>
+          </div> 
+     <div class="box1">
+         <h2>Personal Information<br><br></h2> 
+        <div class="name-email"> 
+         <div class="info">   
+           <label for="Full name">Full name<span>*</span></label>
+           <input type="text" placeholder="Enter your full name" required>
+         </div>
+         <div class="info">
+          <label for="Email">Email Address<span>*</span></label>
+          <input type="email" placeholder="example@gmail.com" required>
+         </div>
+        </div> 
+        <div class="phone">
+        <div class="info">
+          <label for="Phone">Phone Number<span>*</span></label>
+          <input type="tel" placeholder="+1(555) 234-5678" required>
+        </div>  
+        </div>
+     </div>   
+     <div class="box2">
+       <h2>security information</h2> 
+       <div class="pass">
+       <div class="info"> 
+        <label for="Password">Password<span>*</span></label>
+        <input type="password" placeholder="Create a strong password" required>
+       </div>
+       <div class="info">
+        <label for="Confirm Password">Confirm Password<span>*</span></label>
+        <input type="password" placeholder="Re-enter your password" required>
+       </div> 
+       </div>
+     </div>
+     <div class="box3">
+        <h2>Demographics & Preferences</h2>
+      <div class="gender">
+        <h3>Gender<span>*</span></h3>
+        <div class="options">
+         <label>   
         <input type ="radio" id="male" name="gender" value="male">
-        <label for="Male">Male</label>
+        Male
+        </label>
+        <label>
         <input type ="radio" id="female" name="gender" value="female">
-        <label for="Female">Female</label>
-        <input type ="radio" id="other" name="gender" value="other">
-        <label for="Other">Other</label>
+        Female
+        </label>
+        </div>
+      </div>
+      <div class="nation">
+        <h3> Nationality<span>*</span></h3>
         <br>
-        <br>
-
-        <h3> Nationality</h3>
         <select name="country">
             <option>Egypt</option>
             <option>Qatar</option>
@@ -52,36 +69,47 @@
             <option>USA</option>
             <option>Germany</option>
         </select>
+      </div>
         <br>
-        <br>
-
-        <h3>Topics you are interested in</h3>
+      <div class="hobbies">
+        <h3>Areas of Interest<span>*</span></h3>
+        <label>
         <input type="checkbox" id="programming" name="programming">
-        <label for="programming">programming</label>
+        Programming & Development
+        </label>
+        <label>
         <input type="checkbox" id="UX" name="UX">
-        <label for="UX">UX</label>
+        Artificial Intelligence
+        </label>
+        <label>
         <input type="checkbox" id="AI" name="AI">
-        <label for="AI">AI</label>    
+        User Experience Design
+        </label>   
+        <label>
         <input type="checkbox" id="Security" name="Security">
-        <label for="Security">Security</label>    
-
-        <br>
-        <br>
-        <textarea rows="5" cols="100">My name is amged,I'm student in FCI_ZU and I have joined into Frontend Course with Ahmed Hossam</textarea>
-        <br>
-        <br>
+        Cybersecurity
+        </label>  
+      </div>    
+     </div>
+     <div class="box4">
+        <h2>Additional Information</h2>
+        <div class="cv">
+        <label for="cv">Resume/CV (PDF, DOC) <span>*</span></label>
         <input type="file" id="cv" name="cv">
-        <label for="cv">cv</label>
+        </div>
         <br>
+        <div class="textarea">
+        <label for="cv" row="50">About yourself <span>*</span></label>    
+        <textarea>Tell us about your background,experience and what motivates you</textarea>
+        </div>
         <br>
-        <input type="data" id="data" name="cv">
-        <label for="data">data</label>
-        <br>
-        <br>
-
-
+        <div class="data">
+        <label for="data">Preferred Start Date<span>*</span></label>
+        <input type="data" id="data" name="cv" placeholder="mm/dd/yyyy">
+        </div>
+     </div>  
         <button>submit</button>
-    </form>
+    </div>    
 </body>
     
 </html>
