@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,rgb(12, 17, 113),rgb(55, 64, 227),rgb(12, 17, 113));
+    font-family: "Inter", sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 540px;
+    height: auto;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border: 2p solid rgb(239, 236, 235);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width:540px) {
+    .container{
+        width: 300px;
+    }
+    .todo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+h2{
+    color:rgb(12, 17, 113);
+    font-size: 24px sans-serif;
+}
+i{
+    color:rgb(12, 17, 113);
+    width: 20px;
+    height: 20px;
+    font: 24px sans-serif;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.todo span{
+    margin-left: 15px;
+}
+.btns{
+    display: flex;
+    margin-bottom: 30px;
+}
+input{
+    border: 2px solid #0a0c61;
+    color:rgb(12, 17, 113);;
+    border-radius: 4px;
+    padding: 15px;
+    width: 85%;
+    font-size: 18px;
+    height: 32px;
+    background:#f9fafe;
+}
+.Add{
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    background: linear-gradient(to right,rgb(12, 17, 113),rgb(55, 64, 227),rgb(12, 17, 113));
+    color: #f9fafe;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.list ul li{
+    list-style: none;
+    color: #0a0c61;
+    font-size: 18px;
+    padding: 12px 8px 12px 8px;
+    border: 2px solid #0a0c61;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.list ul li span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font: 25px sans-serif;
+}
+.level select{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    box-shadow: #0a0c61;
+    font-style: oblique;
+    font-family: "Inter", sans-serif;
+}
+.status select{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-style: oblique;
+    font-family: "Inter", sans-serif;
+}
+
+ select {
+  background: linear-gradient(to right,rgb(12, 17, 113),rgb(55, 64, 227),rgb(12, 17, 113)); 
+  color: rgb(0, 182, 223);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .name{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ .desc{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: larger;
+ }

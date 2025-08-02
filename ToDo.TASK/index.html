@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortit icon" href="logo.jpg">
+    <title>Programming-Course</title>
+    <style>
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track {
+       box-shadow: inset 0 0 5px grey; 
+       border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+       background: rgb(0, 182, 223); 
+       border-radius: 10px;
+    }
+   ::-webkit-scrollbar-thumb:hover {
+      background: #080a76; 
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="todo">
+            <h2>Languages</h2>
+            <span>
+                 <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-python"></i>
+            </span>
+        </div>
+             <input type="text" class="name" id="name" placeholder="Language Name" required />
+             <textarea class="desc" id="desc" placeholder="Language-description"></textarea>
+       <div class="level"> 
+      <select>  
+        <option>Easy</option>
+        <option>Normal</option>
+        <option>Advanced</option>
+      </select>
+       </div>
+       <div class="status">
+      <select>
+        <option>Learned</option>
+        <option>Learning</option>
+        <option>Want to Learn</option>
+      </select>
+       </div>
+       <div class="btns">
+            <input type="text" id="input-language" placeholder="Enter a Language">
+            <button class="Add">Add</button>
+        </div>
+        <div class="list">
+            <ul id="list-language">
+
+            </ul>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+

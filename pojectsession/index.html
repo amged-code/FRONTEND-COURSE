@@ -5,68 +5,275 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Hosting Website</title>
+    <link rel="shortit icon" href="logo.jpg">
+    <title>Programming-Course</title>
+    <style>
+    ::-webkit-scrollbar {
+        width: 20px;
+    }
+    ::-webkit-scrollbar-track {
+       box-shadow: inset 0 0 5px grey; 
+       border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+       background: rgb(0, 182, 223); 
+       border-radius: 10px;
+    }
+   ::-webkit-scrollbar-thumb:hover {
+      background: #080a76; 
+    }
+    @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,rgb(12, 17, 113),rgb(55, 64, 227),rgb(12, 17, 113));
+    font-family: "Inter", sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 540px;
+    height: auto;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border: 2p solid rgb(239, 236, 235);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+@media (max-width:540px) {
+    .container{
+        width: 300px;
+    }
+    .todo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+h2{
+    color:rgb(12, 17, 113);
+    font-size: 24px sans-serif;
+}
+i{
+    color:rgb(12, 17, 113);
+    width: 20px;
+    height: 20px;
+    font: 24px sans-serif;
+}
+.todo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.todo span{
+    margin-left: 10px;
+}
+.btns{
+    display: flex;
+    margin-bottom: 30px;
+}
+input{
+    border: 2px solid #0a0c61;
+    color:rgb(12, 17, 113);;
+    border-radius: 4px;
+    padding: 15px;
+    width: 85%;
+    font-size: 18px;
+    height: 32px;
+    background:#f9fafe;
+}
+.Add{
+    border: none;
+    border-radius: 4px;
+    width: 20%;
+    background: linear-gradient(to right,rgb(12, 17, 113),rgb(55, 64, 227),rgb(12, 17, 113));
+    color: #f9fafe;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.list ul li{
+    list-style: none;
+    color: #0a0c61;
+    font-size: 18px;
+    padding: 12px 8px 12px 8px;
+    border: 2px solid #0a0c61;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    position: relative;
+}
+.list ul li span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font: 25px sans-serif;
+}
+.level select{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    box-shadow: #0a0c61;
+    font-style: oblique;
+    font-family: "Inter", sans-serif;
+}
+.status select{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    font-style: oblique;
+    font-family: "Inter", sans-serif;
+}
+
+ select {
+  background: linear-gradient(to right,rgb(12, 17, 113),rgb(55, 64, 227),rgb(12, 17, 113)); 
+  color: rgb(0, 182, 223);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+ }
+ .name{
+    width: 100%;
+    margin-bottom: 20px;
+ }
+ .desc{
+    width: 100%;
+    height: 50px;
+    margin-bottom: 20px;
+    font-size: larger;
+ }
+    </style>
 </head>
 <body>
-   <section class="section1">
     <div class="container">
-    <div class="Header">Hosting Website</div>
-    <div class="Links-bar">
-        <div class="links">
-            <ul>
-                    <li class="link"><a href="#">Home</a></li>
-                    <li class="link"><a href="#">About</a></li>
-                    <li class="link"><a href="#">Hosting</a></li>
-                    <li class="link"><a href="#">Testimonials</a></li>
-                    <li class="link"><a href="#">Domain</a></li>
-                    <li class="link"><a href="#">Services</a></li> 
-                    <li class="link"><a href="#">Contact us</a></li> 
+        <div class="todo">
+            <h2>Languages</h2>
+            <span>
+                 <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css3"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-python"></i>
+            </span>
+        </div>
+             <input type="text" class="name" id="name" placeholder="Language Name" required />
+             <textarea class="desc" id="desc" placeholder="Language-description"></textarea>
+       <div class="level"> 
+      <select>  
+        <option>Easy</option>
+        <option>Normal</option>
+        <option>Advanced</option>
+      </select>
+       </div>
+       <div class="status">
+      <select>
+        <option>Learned</option>
+        <option>Learning</option>
+        <option>Want to Learn</option>
+      </select>
+       </div>
+       <div class="btns">
+            <input type="text" id="input-language" placeholder="Enter a Language">
+            <button class="Add">Add</button>
+        </div>
+        <div class="list">
+            <ul id="list-language">
+
             </ul>
         </div>
-        <div class="icons">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-cart-shopping" ></i>
-        </div>
     </div>
-     <div class="hosting">
-      <div class="left">
-         <h1>Hosting <br>And Domain</h1>
-         <button>Read More</button>
-      </div>
-      <div class="right">
-        <img src="banner-img.png" class="photo">
-      </div>
-     </div> 
-    </div>
-   </section> 
-     <div class="search">
-            <input type="text" placeholder="Search..">
-            <button class="search-button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <span>Search</span>
-            </button>
-     </div> 
-   <section class="section2">
-      <div class="container">
-            <div class="feature">
-                <img src="icon-1.png" alt="Icon" class="feature-icon">
-                <h3>Faster Loading Speed</h3>
-                <p>Like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                    their default model text,</p>
-            </div>
-            <div class="feature">
-                <img src="icon-2.png" alt="Feature Icon 2" class="feature-icon">
-                <h3>Faster Loading Speed</h3>
-                <p>Like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                    their default model text,</p>
-            </div>
-            <div class="feature">
-                <img src="icon-3.png" alt="Feature Icon 3" class="feature-icon">
-                <h3>Faster Loading Speed</h3>
-                <p>Like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as
-                    their default model text,</p>
-            </div>
-      </div>
-   </section>
+    <script src="main.js">
+const inputLanguage = document.getElementById("input-language");
+const listLanguage = document.getElementById("list-language");
+
+const btn = document.querySelector(".Add");
+const courses = [
+  {
+    title: "JavaScript",
+    level: "Hard",
+    description: "A versatile scripting language mainly used for adding interactivity and dynamic content to websites. Runs in browsers and on servers (Node.js).",
+  },
+  {
+    title: "Python",
+    level: "Easy",
+    description: "A high-level, interpreted programming language known for its readability and simplicity. Widely used in web development, data science, automation and more",
+  },
+  {
+    title: "Css",
+    level: "Normal",
+    description: "A style sheet language used to describe the presentation and layout of web pages, controlling colors, fonts, spacing, and responsiveness.",
+  },
+  {
+    title: "Html",
+    level: "Easy",
+    description: "The standard markup language for creating the structure of web pages. It defines elements like headings, paragraphs, images, and links",
+  }
+];
+
+courses.forEach(course => {
+  console.log(`Title: course.title`);
+  console.log(`Level:{course.level}`);
+  console.log(`Description: course.description`);
+  console.log("--------------");
+})
+
+function checkLanguage() {
+  let course = courses.find(c => c.title.toLowerCase() === languageValue.toLowerCase());
+  if (!course) {
+    alert("Language not found in database");
+    return;
+  }
+}
+
+function addLanguage() {
+  let languageValue = inputLanguage.value;
+  if (languageValue === "") {
+    alert("You must add Programming Language");
+    return;
+  }
+
+  let li = document.createElement("li");
+  let span = document.createElement("span");
+  let editBtn = document.createElement("button"); 
+
+  li.innerHTML = languageValue + " ";
+
+  span.innerHTML = "&times;";
+  span.onclick = function () {
+    li.remove();
+  };
+
+  editBtn.innerHTML = "Edit";
+  editBtn.onclick = function () {
+    let newName = prompt("Edit language name:", languageValue);
+    if (newName) {
+      languageValue = newName;
+      li.firstChild.nodeValue = newName + " ";
+    }
+  };
+
+  
+  editBtn.style.background = "linear-gradient(to right, rgb(12, 17, 113), rgb(55, 64, 227))";
+  editBtn.style.color = "white";
+  editBtn.style.fontSize = "14px";
+  editBtn.style.padding = "5px 10px";
+  editBtn.style.borderRadius = "5px";
+  editBtn.style.border = "none";
+  editBtn.style.marginLeft = "5px";
+
+  li.appendChild(span);
+  li.appendChild(editBtn);
+  listLanguage.appendChild(li);
+  inputLanguage.value = "";
+}
+
+btn.addEventListener("click", addLanguage);
+</script>
 </body>
-    
+</html>
