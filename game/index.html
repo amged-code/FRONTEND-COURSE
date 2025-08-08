@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>بحبك يا رحمة 💘</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffd6e0, #ffe6f0);
+      font-family: 'Cairo', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      color: #c2185b;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      font-size: 80px;
+      color: crimson;
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 15px 35px;
+      font-size: 20px;
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #ad1457;
+    }
+
+    .message {
+      margin-top: 40px;
+      font-size: 24px;
+      color: #880e4f;
+      min-height: 50px;
+      max-width: 90%;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>يا رحمة... بحبك قد إيه؟ 💌</h1>
+  <div class="heart">💖</div>
+
+  <button onclick="loveMessage()">اضغطي يا رحمة</button>
+
+  <div class="message" id="message"></div>
+
+  <script>
+    const messages = [
+      "يا رحمة، كل دقة فقلبي بتنادي باسمك 💗",
+      "أنا مش بس بحبك، أنا مخلوق ليكِ يا رحمة 🌹",
+      "نفسي أقول لكل الدنيا: رحمة دي ليا وبس 💍",
+      "من يوم ما شوفتك، وأنا عقلي وقلبى بقيتي انتي ❤️",
+      "كل نجمة ف السما بتقول رحمة ملاك 💫",
+      "مش كفاية كلمة بحبك، ده أنا بهواكِ بكل تفاصيلك 🥺",
+      "أنا جنبك طول العمر يا ست البنات يا رحمة 💕",
+      "أنا لو اتولدت تاني، هختارك تاني يا رحمة 👑",
+      "في قلبي غرفة مكتوب عليها: ممنوع الدخول، دي لرحمة بس 🔒",
+      "رحمة... بحبك بجنون، وعايزك ليا وبس للأبد 💘"
+    ];
+
+    function loveMessage() {
+      const msgBox = document.getElementById("message");
+      const randomIndex = Math.floor(Math.random() * messages.length);
+      msgBox.textContent = messages[randomIndex];
+    }
+  </script>
+
+</body>
+</html>

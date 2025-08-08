@@ -32,8 +32,7 @@ saveBtn.addEventListener("click", () => {
   } else {
     const matchedUser = allUsers.find(
       user =>
-        user.name.toLowerCase() === title.toLowerCase() &&
-        user.email.toLowerCase() === body.toLowerCase()
+        user.name.toLowerCase() === title.toLowerCase() && user.email.toLowerCase() === body.toLowerCase()
     );
 
     if (matchedUser) {
@@ -62,7 +61,7 @@ saveBtn.addEventListener("click", () => {
       postList.appendChild(li);
       resetForm();
     } else {
-      alert("User not found.");
+      alert("User not found!");
     }
   }
 });
