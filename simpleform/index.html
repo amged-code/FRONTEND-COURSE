@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      form {
+        background: #fff;
+        padding: 20px;
+        width: 400px;
+        margin: auto;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .form-groups {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .form-group {
+        width: 100%;
+        margin: 10px 0;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      button {
+        padding: 10px;
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      .error {
+        color: red;
+        margin-top: 5px;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="registerForm">
+      <div class="form-groups">
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" id="email" />
+          <span class="error" id="emailError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Username</label>
+          <input type="text" id="username" />
+          <span class="error" id="usernameError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input type="password" id="password" />
+          <span class="error" id="passwordError"></span>
+        </div>
+
+        <div class="form-group">
+          <label>Confirm Password</label>
+          <input type="password" id="confirmPassword" required />
+          <span class="error" id="confirmError"></span>
+        </div>
+      </div>
+
+      <button type="submit" style="cursor: pointer">Register</button>
+    </form>
+  </body>
+  <script>
+    const form = document.getElementById("registerForm");
+
+    let isValid = true;
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      document.getElementById("emailError").innerHTML = "";
+      document.getElementById("usernameError").innerHTML = "";
+      document.getElementById("passwordError").innerHTML = "";
+      document.getElementById("confirmError").innerHTML = "";
+
+      const email = document.getElementById("email").value.trim();
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+      const emailRegex = /^\w+@\w+.(com|net|dev)/g;
+      const userRegex = /^[a-zA-Z0-9_]{4,16}$/;
+      const passwordRegex = /^[A-Za-z\d+]{8,}$/; 
+
+      let Small = /[a-z]/.test(username);
+      let Capital = /[A-Z]/.test(username);
+      let Symbol = /[^a-zA-Z0-9]/.test(username);
+
+      if(!Small||!Capital||!Symbol){
+        document.getElementById("usernameError").textContent = "Name must contain at least: 1 small letter, 1 capital letter, and 1 symbol.";
+        return false;
+      }
+
+      if (!emailRegex.test(email)) {
+        document.getElementById("emailError").textContent = "invalid email";
+        isValid = false;
+      }
+
+      if (!userRegex.test(username)) {
+          document.getElementById("usernameError").textContent ="Username must be 4-16 characters";
+        isValid = false;
+      }
+      if (!passwordRegex.test(password)) {
+        document.getElementById("passwordError").textContent ="Password must be at least 8 characters";
+        isValid = false;
+      }
+
+      if (confirmPassword !== password) {
+        document.getElementById("confirmError").innerText = "Passwords do not match.";
+        isValid = false;
+      }
+
+      if (isValid) {
+        alert("form submit");
+        form.rest();
+      }
+    });
+  </script>
+</html>
