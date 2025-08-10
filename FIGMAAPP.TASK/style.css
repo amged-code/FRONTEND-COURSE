@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    font-family: "Inter", sans-serif;
+}
+hr{
+    color: rgb(203, 203, 203);
+    size: 1px;
+}
+.container{
+    width: 1060px;
+    margin-left: 250px;
+    margin-top: 20px;
+    margin-right: 160px;
+    height: 1317px;
+}
+.contianer2{
+    width: 480px;
+    height: 715px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left:400px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 14px;
+    padding-bottom: 13px;
+}
+.L-text{
+    display: flex;
+    margin-left: 40px;
+    gap: 16px;
+}
+.R-text{
+    display: flex;
+    margin-right: 40px;
+    gap: 23px;
+}
+.L-text h1{
+    font-size:22px;
+    font-weight: 700;
+}
+.L-text img{
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+}
+.R-text img{
+    width: 40px;
+    height: 40px;
+}
+.search{
+    width: 160px;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    background-color:#dedfe1;
+    padding-left:8PX ;
+}
+.search-box{
+    position: relative;
+}
+.searchlogo{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translatex(-50%);
+    color: #607d8b;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.feed{
+    margin-bottom: 16px;
+}
+.box{
+    border: 1px solid rgb(201, 197, 197); 
+    border-radius: 10px;
+    padding: 10px; 
+    width: 928px; 
+    margin-left: 16px;
+}
+.photo{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-left: 15px;
+}
+.posts{
+    display: flex;
+    margin-top: 91px;
+    margin-left: 814px;
+}
+.logo{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.h2{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+h2{
+    font-size: 16px;
+    font-style: bold;
+    line-height:20px ;
+}
+h3{
+    color: #5C738A;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.post{
+    display: flex;
+    margin-top: 56px;
+}
+.image{
+    width: 320px;
+    height: 171px;
+    border-radius: 12px;
+}
+.text{
+    width: 608px;
+}
+.reach{
+    display: flex;
+    gap: 16px;
+    margin-bottom:16px ;
+    margin-left: 16px;
+}
+.reach-logo{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.react,.comment{
+    display: flex;
+    gap: 8px;
+}
+.reach h3{
+    margin-top: 2px;
+}
+.comment-friend{
+    display: flex;
+    gap: 12px;
+}
+.comment-friend img{
+    width: 40px;
+    height: 40px;
+}
+span{
+    color: #5C738A;
+    font-size: 14px;
+    font-weight: 400;
+}
+h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 14px;
+}
+.persons{
+    margin-left: 16px;
+}
+.container2 h1{
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    margin-top: 40px;
+    margin-left: 629px;
+}
+
+.inputs input{
+    display: block;
+    width: 448px;
+    height: 56px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    border-radius: 12px;
+    background-color: #EBEDF2;
+    color: rgb(174, 170, 170);
+    margin-left: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+}
+.signBtn button{
+    background-color: #DBE8F2;
+    border-radius: 12px;
+    margin-left: 500px;
+    width: 448px;
+    height: 56px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.haveAccount{
+    color: #9dabb9;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 600px;
+    margin-top: 14px;
+}
+.container3{
+    display: flex;
+    padding-left: 16px;
+}
+.side{
+    margin-left: 24px;
+    margin-top: 20px;
+    width: 320px;
+    height: 1237px;
+}
+.section{
+    padding-top: 16px;
+    padding-left: 16px;
+}
+.friend{
+    display: flex;
+    margin-top: 8px;
+    gap: 16px;
+    cursor: pointer;
+}
+.textinfo{
+    width: 101px;
+    height: 45px;
+    display: block;
+    margin-top: 5px;
+}
+.Profile1{
+    margin-left: 500px;
+    margin-top: 78px;
+    margin-bottom: 16PX;
+}
+.input-profile{
+    width: 448px;
+    height: 32px;
+    border-radius: 12px;
+    border:1px solid rgb(181, 207, 207);
+    margin-bottom: 12PX;
+}
+.Bio{
+    width: 448px;
+    height: 114px;
+    border-radius: 12px;
+    border:1px solid rgb(181, 207, 207);
+    margin-bottom: 12PX;
+}
+.update{
+    width: 444px;
+    height: 40px;
+    padding-right: 16px;
+    padding-left: 16px;
+    border-radius: 12px;
+    border: none;
+    background-color:#DBE8F2;
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 64PX;
+}
